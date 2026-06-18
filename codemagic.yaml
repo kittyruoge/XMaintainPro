@@ -1,6 +1,6 @@
 workflows:
   ios-native-quick-start:
-    name: Lumen Atlas
+    name: Nex Vault Pro
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
@@ -8,13 +8,13 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.LumenAtlas
+        bundle_identifier: com.NexVaultPro
       vars:
         BUNDLE_ID: $bundle_identifier
-        PROJECT_PATH: "LumenAtlas" #5:工程名称
+        PROJECT_PATH: "NexVaultPro" #5:工程名称
         XCODE_WORKSPACE: "$PROJECT_PATH/$PROJECT_PATH.xcworkspace"
         XCODE_SCHEME: $PROJECT_PATH
-        APP_STORE_APPLE_ID: 6780841936
+        APP_STORE_APPLE_ID: 6781626615
       xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
       cocoapods: default
     scripts:
