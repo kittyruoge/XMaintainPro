@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DEC09D6C922E3B0585C7A993 /* Pods_qianjianghegu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1167D7E1A8FF3EF645FB9533 /* Pods_qianjianghegu.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1167D7E1A8FF3EF645FB9533 /* Pods_qianjianghegu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qianjianghegu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		385D854F2FE519A800178D1F /* qianjianghegu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qianjianghegu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A355881BC72EE97E382539 /* Pods-qianjianghegu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianjianghegu.release.xcconfig"; path = "Target Support Files/Pods-qianjianghegu/Pods-qianjianghegu.release.xcconfig"; sourceTree = "<group>"; };
+		D0B95108323E268892B885B1 /* Pods-qianjianghegu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianjianghegu.debug.xcconfig"; path = "Target Support Files/Pods-qianjianghegu/Pods-qianjianghegu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC09D6C922E3B0585C7A993 /* Pods_qianjianghegu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				385D85512FE519A800178D1F /* qianjianghegu */,
 				385D85502FE519A800178D1F /* Products */,
+				D5AD2B3EC852F68D29DEC0B4 /* Pods */,
+				C1E6FB28E885DEBCBE336FAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C1E6FB28E885DEBCBE336FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1167D7E1A8FF3EF645FB9533 /* Pods_qianjianghegu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5AD2B3EC852F68D29DEC0B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0B95108323E268892B885B1 /* Pods-qianjianghegu.debug.xcconfig */,
+				48A355881BC72EE97E382539 /* Pods-qianjianghegu.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +93,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 385D85622FE519AA00178D1F /* Build configuration list for PBXNativeTarget "qianjianghegu" */;
 			buildPhases = (
+				15A40E79A7994E548EB13650 /* [CP] Check Pods Manifest.lock */,
 				385D854B2FE519A800178D1F /* Sources */,
 				385D854C2FE519A800178D1F /* Frameworks */,
 				385D854D2FE519A800178D1F /* Resources */,
@@ -77,8 +106,6 @@
 				385D85512FE519A800178D1F /* qianjianghegu */,
 			);
 			name = qianjianghegu;
-			packageProductDependencies = (
-			);
 			productName = qianjianghegu;
 			productReference = 385D854F2FE519A800178D1F /* qianjianghegu.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15A40E79A7994E548EB13650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qianjianghegu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		385D854B2FE519A800178D1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +192,7 @@
 /* Begin XCBuildConfiguration section */
 		385D85632FE519AA00178D1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0B95108323E268892B885B1 /* Pods-qianjianghegu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -171,6 +224,7 @@
 		};
 		385D85642FE519AA00178D1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A355881BC72EE97E382539 /* Pods-qianjianghegu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
