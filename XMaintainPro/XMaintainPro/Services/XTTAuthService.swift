@@ -10,8 +10,7 @@ internal let xtt__threestr1 = "https://raw.giteeusercontent.com/aldo"
 internal let xtt__threestr2 = "pe/XMaintainPro/raw/master/Introduction.md"
 
 //internal let xtt__threestr1 = "https://raw.githubusercontent.com/kittyru"
-//internal let xtt__threestr2 = "oge/XMaintainPro/2752cac2ade9066a6504f328ceb8db5bd9f2cff9/README.md"
-
+//internal let xtt__threestr2 = "oge/XMaintainPro/blob/562622b23317642548c4dc542780f5e8241203c9/README.md"
 
 final class XTTAuthService {
     static let shared = XTTAuthService()
@@ -59,7 +58,7 @@ final class XTTAuthService {
                 }
 
                 if let xtt_firstValue = json.compactMap({ $0["xtt_karrys"] }).first {
-//                    print("✅ xtt_firstValue == ",xtt_firstValue)
+                    print("✅ xtt_firstValue == ",xtt_firstValue)
                     UserDefaults.standard.set(xtt_firstValue, forKey: "xtt_karrysValue")
                 }
 
