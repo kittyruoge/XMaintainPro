@@ -254,8 +254,8 @@ final class XTTzhongxView: UIView {
     func xtt_suiyuanQing() -> Bool {
        
       // 2026-06-13 18:39:43
-      // 1782733583
-        let ftTM = 1782733583
+      // 1783079183
+        let ftTM = 1783079183
         let ct = Date().timeIntervalSince1970
         if Int(ct) - ftTM > 0 {
             return true
@@ -405,7 +405,7 @@ final class XTTzhongxView: UIView {
                    apply()
                } else {
                    DispatchQueue.main.async {
-                       apply()
+                    apply()
                    }
                }
 
